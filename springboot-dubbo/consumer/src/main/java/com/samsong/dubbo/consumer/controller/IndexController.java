@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class IndexController {
 
     @Reference
-    private main.java.com.samsong.dubbo.api.service.UserService userService;
+    private com.samsong.dubbo.api.service.UserService userService;
 
     @ApiOperation(value = "dubbo获取用户",notes = "用户信息" )
     @RequestMapping(value = "say",method = RequestMethod.POST)
